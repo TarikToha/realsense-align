@@ -11,3 +11,7 @@ scripts/
 tests/data/
 dist/
 build/
+
+.idea
+*.npy
+*.csv

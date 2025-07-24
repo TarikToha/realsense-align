@@ -168,6 +168,7 @@ class InteractiveViewer:
 def main(cap_dir):
     cols = colors(pathlib.Path(cap_dir))
     deps, aligned = depths(pathlib.Path(cap_dir), cols)
+    np.save('deps', deps),np.save('aligned', aligned)
 
     viewer = InteractiveViewer(cols, deps, aligned)
     viewer.show()
